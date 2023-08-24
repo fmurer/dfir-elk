@@ -2,6 +2,7 @@
 
 ## Ressources
 - https://www.elastic.co/blog/getting-started-with-the-elastic-stack-and-docker-compose
+- https://www.elastic.co/guide/en/elasticsearch/reference/8.9/docker.html
 
 ## Prerequisites
 Docker must be installed on the system. To do so, you can use the installation script.
