@@ -1,4 +1,5 @@
-- type: log
+- type: filestream
+  id: evtxecmd
   paths:
     - /ingest/evtxecmd/*/*/*/*/*
     - /ingest/evtxecmd/*/*/*/*

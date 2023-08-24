@@ -1,0 +1,41 @@
+- type: filestream
+  id: adminauditlog
+  paths:
+    - /ingest/microsoft365/AdminAuditLog/*/*/*/*/*
+    - /ingest/microsoft365/AdminAuditLog/*/*/*/*
+    - /ingest/microsoft365/AdminAuditLog/*/*/*
+    - /ingest/microsoft365/AdminAuditLog/*/*
+    - /ingest/microsoft365/AdminAuditLog/*
+  exclude_files: [ 'readme.txt', '\.gz$', '\.bz2$', '\.zip$' ]
+  close_inactive: 5m
+  fields_under_root: true
+  fields:
+    type: adminauditlog
+
+- type: filestream
+  id: mailboxauditlog
+  paths:
+    - /ingest/microsoft365/MailboxAuditLog/*/*/*/*/*
+    - /ingest/microsoft365/MailboxAuditLog/*/*/*/*
+    - /ingest/microsoft365/MailboxAuditLog/*/*/*
+    - /ingest/microsoft365/MailboxAuditLog/*/*
+    - /ingest/microsoft365/MailboxAuditLog/*
+  exclude_files: [ 'readme.txt', '\.gz$', '\.bz2$', '\.zip$' ]
+  close_inactive: 5m
+  fields_under_root: true
+  fields:
+    type: mailboxauditlog
+
+- type: filestream
+  id: messagetrace
+  paths:
+    - /ingest/microsoft365/MessageTrace/*/*/*/*/*
+    - /ingest/microsoft365/MessageTrace/*/*/*/*
+    - /ingest/microsoft365/MessageTrace/*/*/*
+    - /ingest/microsoft365/MessageTrace/*/*
+    - /ingest/microsoft365/MessageTrace/*
+  exclude_files: [ 'readme.txt', '\.gz$', '\.bz2$', '\.zip$' ]
+  close_inactive: 5m
+  fields_under_root: true
+  fields:
+    type: messagetrace

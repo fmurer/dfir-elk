@@ -1,4 +1,5 @@
-- type: log
+- type: filestream
+  id: hayabusa
   paths:
     - /ingest/hayabusa/*/*/*/*/*
     - /ingest/hayabusa/*/*/*/*
