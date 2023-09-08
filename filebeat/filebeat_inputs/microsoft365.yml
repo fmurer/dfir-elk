@@ -39,3 +39,17 @@
   fields_under_root: true
   fields:
     type: messagetrace
+
+- type: filestream
+  id: unifiedauditlogs
+  paths:
+    - /ingest/microsoft365/UAL/*/*/*/*/*
+    - /ingest/microsoft365/UAL/*/*/*/*
+    - /ingest/microsoft365/UAL/*/*/*
+    - /ingest/microsoft365/UAL/*/*
+    - /ingest/microsoft365/UAL/*
+  exclude_files: [ 'readme.txt', '\.gz$', '\.bz2$', '\.zip$' ]
+  close_inactive: 5m
+  fields_under_root: true
+  fields:
+    type: unifiedauditlogs
