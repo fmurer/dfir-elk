@@ -1,0 +1,2 @@
+ingest/**/*.csv
+ingest/**/*.json
