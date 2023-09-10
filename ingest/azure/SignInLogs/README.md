@@ -6,3 +6,8 @@ This folder expects Azure AD Sign In Logs in a JSON format. The logs are expecte
 Connect-Azure
 Get-ADSignInLogs
 ```
+
+Before ingesting the logs, they must be normalized. Use the skript to do that.
+```Bash
+bash scripts/aad_normalize.sh [LOGS] > [LOGS]_normalized.json
+```

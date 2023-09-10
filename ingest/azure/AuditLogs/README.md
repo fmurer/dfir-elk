@@ -6,3 +6,8 @@ This folder expects Azure AD Audit Logs in a JSON format. The logs are expected 
 Connect-Azure
 Get-ADAuditLogs
 ```
+
+Before ingesting the logs, they must be normalized. Use the skript to do that.
+```Bash
+bash scripts/aad_normalize.sh [LOGS] > [LOGS]_normalized.json
+```
