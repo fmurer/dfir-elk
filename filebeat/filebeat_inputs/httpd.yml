@@ -1,0 +1,14 @@
+- type: filestream
+  id: nginx
+  paths:
+    - /ingest/httpd/nginx/*/*/*/*/*
+    - /ingest/httpd/nginx/*/*/*/*
+    - /ingest/httpd/nginx/*/*/*
+    - /ingest/httpd/nginx/*/*
+    - /ingest/httpd/nginx/*
+  exclude_files: [ 'README.txt', '\.gz$', '\.bz2$', '\.zip$', '\.md$']
+  close_inactive: 5m
+  fields_under_root: true
+  fields:
+    type: httpd
+  tags: [ 'nginx' ] 
