@@ -6,7 +6,7 @@
     - /ingest/azure/SignInLogs/*/*/*
     - /ingest/azure/SignInLogs/*/*
     - /ingest/azure/SignInLogs/*
-  exclude_files: [ 'readme.txt', '\.gz$', '\.bz2$', '\.zip$', '\.md$']
+  exclude_files: [ 'README.txt', '\.gz$', '\.bz2$', '\.zip$', '\.md$']
   close_inactive: 5m
   fields_under_root: true
   fields:
@@ -20,7 +20,7 @@
     - /ingest/azure/AuditLogs/*/*/*
     - /ingest/azure/AuditLogs/*/*
     - /ingest/azure/AuditLogs/*
-  exclude_files: [ 'readme.txt', '\.gz$', '\.bz2$', '\.zip$', '\.md$']
+  exclude_files: [ 'README.txt', '\.gz$', '\.bz2$', '\.zip$', '\.md$']
   close_inactive: 5m
   fields_under_root: true
   fields:
