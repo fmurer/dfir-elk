@@ -1,0 +1,13 @@
+- type: filestream
+  id: suricata
+  paths:
+    - /ingest/suricata/*/*/*/*/*
+    - /ingest/suricata/*/*/*/*
+    - /ingest/suricata/*/*/*
+    - /ingest/suricata/*/*
+    - /ingest/suricata/*
+  exclude_files: [ 'README\.md', '\.gz$', '\.bz2$', '\.zip$', '\.md$']
+  close_inactive: 5m
+  fields_under_root: true
+  fields:
+    type: suricata
