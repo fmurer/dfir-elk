@@ -1,0 +1,16 @@
+- type: filestream
+  id: fortinet
+  paths:
+    - /ingest/firewalls/fortinet/*/*/*/*/*
+    - /ingest/firewalls/fortinet/*/*/*/*
+    - /ingest/firewalls/fortinet/*/*/*
+    - /ingest/firewalls/fortinet/*/*
+    - /ingest/firewalls/fortinet/*
+  exclude_files: [ 'README\.md', '\.gz$', '\.bz2$', '\.zip$', '\.md$']
+  close_inactive: 5m
+  fields_under_root: true
+  processors:
+    - add_tags:
+        tags: [fortinet]
+  #fields:
+  #  type: fortinet

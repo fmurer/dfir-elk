@@ -6,7 +6,7 @@
     - /ingest/microsoft365/AdminAuditLog/*/*/*
     - /ingest/microsoft365/AdminAuditLog/*/*
     - /ingest/microsoft365/AdminAuditLog/*
-  exclude_files: [ 'README.md', '\.gz$', '\.bz2$', '\.zip$', '\.md$']
+  exclude_files: [ 'README\.md', '\.gz$', '\.bz2$', '\.zip$', '\.md$']
   close_inactive: 5m
   fields_under_root: true
   fields:
@@ -20,7 +20,7 @@
     - /ingest/microsoft365/MailboxAuditLog/*/*/*
     - /ingest/microsoft365/MailboxAuditLog/*/*
     - /ingest/microsoft365/MailboxAuditLog/*
-  exclude_files: [ 'README.md', '\.gz$', '\.bz2$', '\.zip$', '\.md$']
+  exclude_files: [ 'README\.md', '\.gz$', '\.bz2$', '\.zip$', '\.md$']
   close_inactive: 5m
   fields_under_root: true
   fields:
@@ -34,7 +34,7 @@
     - /ingest/microsoft365/MessageTrace/*/*/*
     - /ingest/microsoft365/MessageTrace/*/*
     - /ingest/microsoft365/MessageTrace/*
-  exclude_files: [ 'README.md', '\.gz$', '\.bz2$', '\.zip$', '\.md$']
+  exclude_files: [ 'README\.md', '\.gz$', '\.bz2$', '\.zip$', '\.md$']
   close_inactive: 5m
   fields_under_root: true
   fields:
@@ -48,7 +48,7 @@
     - /ingest/microsoft365/UAL/*/*/*
     - /ingest/microsoft365/UAL/*/*
     - /ingest/microsoft365/UAL/*
-  exclude_files: [ 'README.md', '\.gz$', '\.bz2$', '\.zip$', '\.md$']
+  exclude_files: [ 'README\.md', '\.gz$', '\.bz2$', '\.zip$', '\.md$']
   close_inactive: 5m
   fields_under_root: true
   fields:
