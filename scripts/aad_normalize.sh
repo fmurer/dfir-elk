@@ -1,3 +1,4 @@
 #!/bin/bash
 dos2unix $1
-cat $1 | jq -c .[]
+awk '{ gsub(/\xef\xbb\xbf/,""); print }' $1 | jq -c .[]
+# cat $1 | jq -c .[]
